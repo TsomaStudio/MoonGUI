@@ -2,7 +2,7 @@
 # Repository sanity checks (stage 0.1): required files and a secret scan.
 set -eu
 fail=0
-for f in LICENSE README.md docs/HANDOFF.md docs/PROJECT_RULES.md docs/AI_REFERENCE.md docs/adr/0000-template.md; do
+for f in LICENSE README.md docs/HANDOFF.md docs/PROJECT_RULES.md docs/AI_REFERENCE.md docs/adr/0000-template.md docs/architecture/spec.md docs/architecture/phase0-design.md; do
   if [ ! -f "$f" ]; then echo "MISSING: $f"; fail=1; fi
 done
 if ! grep -q "BSD Zero Clause License" LICENSE; then echo "LICENSE is not 0BSD"; fail=1; fi
