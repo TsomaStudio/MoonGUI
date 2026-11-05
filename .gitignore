@@ -1,0 +1,12 @@
+/build*/
+/out/
+/.vs/
+/.vscode/
+/.idea/
+CMakeUserPresets.json
+compile_commands.json
+*.user
+*.obj
+*.o
+*.pdb
+bench_report.json
